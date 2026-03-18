@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "story:hazmat-armor-layer-1"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "story:hazmat-armor-layer-1"
+      }
+    ]
+  }
+}

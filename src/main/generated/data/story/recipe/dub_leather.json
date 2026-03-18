@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "multi_bench",
+  "key": {
+    "l": "story:thick_leather",
+    "r": "minecraft:white_wool"
+  },
+  "pattern": [
+    "rrr",
+    "lll"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:dub_leather"
+  }
+}

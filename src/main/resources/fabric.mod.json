@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "story",
+	"version": "${version}",
+	"name": "Story",
+	"description": "",
+	"authors": [
+		"Pikachy-GCTeam"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gc.story.Story"
+		],
+		"client": [
+			"gc.story.StoryClient"
+		],
+		"fabric-datagen": [
+			"gc.story.StoryDataGenerator"
+		]
+	},
+	"mixins": [
+		"story.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

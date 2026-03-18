@@ -1,0 +1,23 @@
+{
+  "itemGroup.story.story_group": "Сюжет",
+
+  "item.story.ifirium": "Ифириум",
+  "item.story.ifirium_ore": "Ифириум руда",
+  "item.story.thick_leather": "Плотная кожа",
+  "item.story.dub_leather": "Дублёная кожа",
+  "item.story.umbrella": "Зонт",
+  "item.story.umbrella_blue": "Зонт",
+  "item.story.umbrella_green": "Зонт",
+  "item.story.umbrella_flwr": "Зонт",
+  "item.story.umbrella_honey": "Зонт",
+  "item.story.umbrella_mshrm": "Зонт",
+  "item.story.umbrella_purple": "Зонт",
+  "block.story.ifirium_block": "Ифириум блок",
+  "item.story.him_helmet": "Хим-защита Шлем",
+  "item.story.him_chestplate": "Хим-защита Нагрудник",
+  "item.story.him_leggings": "Хим-защита Поножи",
+  "item.story.him_boots": "Хим-защита Ботинки",
+  "block.story.ifirium_ore": "Ифириум руда",
+  "key.category.minecraft.abi": "Сюжет",
+  "key.story.specability": "Активировать спектатора"
+}

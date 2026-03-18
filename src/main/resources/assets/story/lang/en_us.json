@@ -1,0 +1,23 @@
+{
+  "itemGroup.story.story_group": "Story Mod Items",
+
+  "item.story.ifirium": "Ethereum",
+  "item.story.ifirium_ore": "Ethereum ore",
+  "item.story.thick_leather": "Thick leather",
+  "item.story.umbrella": "Umbrella",
+  "item.story.umbrella_blue": "Umbrella",
+  "item.story.umbrella_green": "Umbrella",
+  "item.story.umbrella_flwr": "Umbrella",
+  "item.story.umbrella_honey": "Umbrella",
+  "item.story.umbrella_mshrm": "Umbrella",
+  "item.story.umbrella_purple": "Umbrella",
+  "item.story.dub_leather": "Dub leather",
+  "block.story.ifirium_block": "Ifirium Block",
+  "item.story.him_helmet": "Him Helmet",
+  "item.story.him_chestplate": "Him Chestplate",
+  "item.story.him_leggings": "Him Leggings",
+  "item.story.him_boots": "Him Boots",
+  "block.story.ifirium_ore": "Ethereum ore",
+  "key.category.minecraft.abi": "Story",
+  "key.story.specability": "Activate Spectator"
+}

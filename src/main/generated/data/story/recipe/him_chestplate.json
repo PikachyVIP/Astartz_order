@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "multi_bench",
+  "key": {
+    "l": "story:dub_leather"
+  },
+  "pattern": [
+    "l l",
+    "lll",
+    "lll"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:him_chestplate"
+  }
+}

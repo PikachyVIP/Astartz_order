@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "gc.story.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlazeEntityMixin",
+    "DrownedEntityMixin",
+    "EnderPearlMixin",
+    "PhantomEntityMixin",
+    "PlayerDamageMixin",
+    "SimpleItemStackMixin",
+    "SkeletonEntityMixin",
+    "ZombieEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
