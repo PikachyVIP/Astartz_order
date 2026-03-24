@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": "story:chiseled"
+  },
+  "pattern": [
+    "ll ",
+    "ll ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "id": "story:cut"
+  }
+}

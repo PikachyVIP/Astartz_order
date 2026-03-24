@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shovel_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:shovel_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:shovel_chu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_shovel_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:shovel_chu"
+    ]
+  }
+}

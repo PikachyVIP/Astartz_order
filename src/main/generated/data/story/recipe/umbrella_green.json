@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "multi_bench",
   "key": {
     "b": "minecraft:breeze_rod",
     "d": "story:dub_leather",

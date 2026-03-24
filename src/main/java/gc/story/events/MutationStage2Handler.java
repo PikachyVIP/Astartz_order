@@ -3,6 +3,8 @@ package gc.story.events;
 import com.mojang.serialization.Codec;
 import gc.story.Story;
 import gc.story.events.debuff.ScavengerDebuff;
+import gc.story.items.Devourer;
+import gc.story.items.Liberation;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -11,6 +13,7 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -228,7 +231,7 @@ public class MutationStage2Handler {
                 !world.isRaining()) {
 
             if(!InfectionHandler.hasUmbrella(player)
-                    && player.getEntityWorld().getRegistryKey() == World.OVERWORLD) player.setOnFireFor(8);
+                    && player.getEntityWorld().getRegistryKey() == World.OVERWORLD) player.setOnFireFor(1);
         }
     }
 
@@ -251,24 +254,18 @@ public class MutationStage2Handler {
                 player.setHealth(player.getMaxHealth());
             }
         }
-        if (RANDOM.nextInt(15) == 0) {
-            player.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.LEVITATION,
-                    300,
-                    0,
-                    false,
-                    false,
-                    true
-            ));
+        if (!hasProtectiveItem(player)) {
+            if (RANDOM.nextInt(15) == 0) {
+                player.addStatusEffect(new StatusEffectInstance(
+                        StatusEffects.LEVITATION,
+                        300,
+                        0,
+                        false,
+                        false,
+                        true
+                ));
+            }
         }
-//        player.addStatusEffect(new StatusEffectInstance(
-//                StatusEffects.SLOW_FALLING,
-//                100,
-//                0,
-//                false,
-//                false,
-//                true
-//        ));
         player.addStatusEffect(new StatusEffectInstance(
                 StatusEffects.SLOWNESS,
                 100,
@@ -277,6 +274,15 @@ public class MutationStage2Handler {
                 false,
                 true
         ));
+    }
+
+    private static boolean hasProtectiveItem(ServerPlayerEntity player) {
+        for (ItemStack stack : player.getInventory().getMainStacks()) {
+            if (stack.getItem() instanceof Liberation) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static boolean hasDebuff(ServerPlayerEntity player, Debuff debuff) {

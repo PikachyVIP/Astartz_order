@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hoe_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:hoe_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:hoe_chu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hoe_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:hoe_chu"
+    ]
+  }
+}

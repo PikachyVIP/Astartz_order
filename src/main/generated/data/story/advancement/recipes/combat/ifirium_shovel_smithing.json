@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crystal_ignot_stable": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:crystal_ignot_stable"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:ifirium_shovel_smithing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crystal_ignot_stable",
+      "has_netherite_shovel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:ifirium_shovel_smithing"
+    ]
+  }
+}

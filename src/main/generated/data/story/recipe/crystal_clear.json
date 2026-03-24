@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "1",
+  "key": {
+    "l": "story:crystal_block"
+  },
+  "pattern": [
+    "l  ",
+    "   ",
+    "   "
+  ],
+  "result": {
+    "count": 9,
+    "id": "story:crystal_clear"
+  }
+}

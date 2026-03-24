@@ -1,17 +1,19 @@
 package gc.story;
 
+import gc.story.blocks.BlockRecipes;
+import gc.story.commands.CompAdminCommands;
 import gc.story.commands.StoryAdminCommand;
 import gc.story.data.BiomeModificationInit;
 import gc.story.events.*;
 import gc.story.events.debuff.*;
-import gc.story.inits.ModBlocks;
-import gc.story.inits.ModItemGroups;
-import gc.story.inits.ModItems;
+import gc.story.inits.*;
 import gc.story.networking.StoryNetwork;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
+import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -35,9 +37,14 @@ public class Story implements ModInitializer {
 		ModItems.initialize();
 		ModItems.registerAll();
 		ModBlocks.initialize();
+		ModEntities.initialize();
+		ModBlockEntities.initialize();
+		BlockRecipes.registerRecipes();
+
 		BiomeModificationInit.load();
 		ModItemGroups.initialize();
 		CommandRegistrationCallback.EVENT.register(StoryAdminCommand::register);
+		CommandRegistrationCallback.EVENT.register(CompAdminCommands::register);
 
 		InfectionHandler.register();
 		StageHandler.register();
@@ -51,6 +58,13 @@ public class Story implements ModInitializer {
 		FireDebuff.register();
 		HitInfHandler.register();
 		LostDebuff.register();
+		AntigravLib.register();
+		ScavGule.register();
+		UnderWaterMaskHandler.register();
+		ScalpelHandler.register();
+
+		ModScreenHandlers.registerScreenHandlers();
+
 
 		MutationStage3BuffHandler.register();
 
@@ -58,5 +72,6 @@ public class Story implements ModInitializer {
 				InfectionHandler.INFECTED_ATTACHMENT + ", " +
 				InfectionHandler.CHANCE_ATTACHMENT);
 		LOGGER.info("Hello Fabric world!");
+
 	}
 }

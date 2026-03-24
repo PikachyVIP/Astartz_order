@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ifirium_block": {
+    "has_ifirium": {
       "conditions": {
         "items": [
           {
-            "items": "story:ifirium_block"
+            "items": "story:ifirium"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ifirium_block"
+      "has_ifirium"
     ]
   ],
   "rewards": {

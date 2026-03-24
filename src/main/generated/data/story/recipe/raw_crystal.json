@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "2",
+  "key": {
+    "l": "story:crystal_clear"
+  },
+  "pattern": [
+    "lll",
+    "lll",
+    "lll"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:raw_crystal"
+  }
+}

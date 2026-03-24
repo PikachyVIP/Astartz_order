@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:anvil",
+    "g": "minecraft:heavy_core",
+    "i": "story:ifirium_block",
+    "l": "minecraft:iron_block",
+    "r": "story:press_chu",
+    "s": "minecraft:glowstone_dust"
+  },
+  "pattern": [
+    "lsl",
+    "iri",
+    "ege"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:press"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cut": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:cut"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:cut_to_chiseled"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cut"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:cut_to_chiseled"
+    ]
+  }
+}

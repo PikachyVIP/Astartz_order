@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:echo_shard",
+    "g": "minecraft:heart_of_the_sea",
+    "i": "story:ifirium_block",
+    "l": "minecraft:iron_block",
+    "r": "story:cleaner_chu",
+    "s": "minecraft:brewing_stand"
+  },
+  "pattern": [
+    "lsl",
+    "iri",
+    "ege"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:cleaner"
+  }
+}

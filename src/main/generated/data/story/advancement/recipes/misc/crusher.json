@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crusher_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:crusher_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:crusher"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crusher_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:crusher"
+    ]
+  }
+}

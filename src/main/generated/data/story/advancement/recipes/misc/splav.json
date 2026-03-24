@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_splav_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:splav_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:splav"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_splav_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:splav"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dust_clear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:dust_clear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:potion_inf"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dust_clear"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:potion_inf"
+    ]
+  }
+}

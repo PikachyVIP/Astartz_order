@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "story:crystal_ignot_stable",
+  "base": "minecraft:netherite_boots",
+  "result": {
+    "id": "story:ifirium_boots"
+  },
+  "template": "story:boots_chu"
+}

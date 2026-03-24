@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "story:mass",
+    "g": "minecraft:dragon_head",
+    "i": "story:ifirium_block",
+    "l": "minecraft:iron_block",
+    "r": "story:splav_chu",
+    "s": "minecraft:blaze_powder"
+  },
+  "pattern": [
+    "lsl",
+    "iri",
+    "ege"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:splav"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "story:crystal_ignot_stable",
+  "base": "minecraft:netherite_pickaxe",
+  "result": {
+    "id": "story:ifirium_picaxe"
+  },
+  "template": "story:pickaxe_chu"
+}

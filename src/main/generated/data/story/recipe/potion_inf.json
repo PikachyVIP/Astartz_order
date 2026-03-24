@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "story:dust_clear",
+    "minecraft:potion"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:potion_inf"
+  }
+}

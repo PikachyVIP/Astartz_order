@@ -12,6 +12,7 @@ import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -141,6 +142,15 @@ public class InfectionHandler {
     // Метод для ручного заражения (например, через команду)
     public static void setInfected(ServerPlayerEntity player, int infected) {
         player.setAttached(INFECTED_ATTACHMENT, infected);
+        InfectionHandler.resethp(player);
+        if(infected == -1)StageHandler.scheduleStageTransition(player, -1);
+        if(infected == 0)StageHandler.scheduleStageTransition(player, 0);
+        if(infected == 1)StageHandler.scheduleStageTransition(player, 1);
+        if(infected == 2){
+            StageHandler.scheduleStageTransition(player, 2);
+            if(MutationStage2Handler.getCurrentDebuff(player) == null) MutationStage2Handler.applyDebuff(player, MutationStage2Handler.getRandomDebuff());
+        }
+        if(infected == 3)StageHandler.scheduleStageTransition(player, -1);
     }
 
     // Метод для установки шанса (например, через команду)
@@ -159,22 +169,48 @@ public class InfectionHandler {
         boolean hasLeggings = !leggings.isEmpty() && leggings.getItem() == ModItems.GUIDITE_LEGGINGS;
         boolean hasBoots = !boots.isEmpty() && boots.getItem() == ModItems.GUIDITE_BOOTS;
 
+        boolean hasHelmet2 = !helmet.isEmpty() && helmet.getItem() == ModItems.IFIRIUM_HELMET;
+        boolean hasChestplate2 = !chestplate.isEmpty() && chestplate.getItem() == ModItems.IFIRIUM_CHESTPLATE;
+        boolean hasLeggings2 = !leggings.isEmpty() && leggings.getItem() == ModItems.IFIRIUM_LEGGINGS;
+        boolean hasBoots2 = !boots.isEmpty() && boots.getItem() == ModItems.IFIRIUM_BOOTS;
+
+        return (hasHelmet && hasChestplate && hasLeggings && hasBoots) || (hasHelmet2 && hasChestplate2 && hasLeggings2 && hasBoots2);
+    }
+    public static boolean hasFullIfiriumArmor(ServerPlayerEntity player) {
+        ItemStack helmet = player.getEquippedStack(EquipmentSlot.HEAD);
+        ItemStack chestplate = player.getEquippedStack(EquipmentSlot.CHEST);
+        ItemStack leggings = player.getEquippedStack(EquipmentSlot.LEGS);
+        ItemStack boots = player.getEquippedStack(EquipmentSlot.FEET);
+
+        boolean hasHelmet = !helmet.isEmpty() && helmet.getItem() == ModItems.IFIRIUM_HELMET;
+        boolean hasChestplate = !chestplate.isEmpty() && chestplate.getItem() == ModItems.IFIRIUM_CHESTPLATE;
+        boolean hasLeggings = !leggings.isEmpty() && leggings.getItem() == ModItems.IFIRIUM_LEGGINGS;
+        boolean hasBoots = !boots.isEmpty() && boots.getItem() == ModItems.IFIRIUM_BOOTS;
+
         return hasHelmet && hasChestplate && hasLeggings && hasBoots;
     }
 
     public static boolean hasUmbrella(ServerPlayerEntity player) {
-        ItemStack stuck = player.getStackInHand(player.getActiveHand());
+        // Используем getMainHandStack() и getOffHandStack() вместо getActiveHand()
+        ItemStack mainHand = player.getMainHandStack();
+        ItemStack offHand = player.getOffHandStack();
 
-        boolean hasUmbrella = !stuck.isEmpty() && (stuck.getItem() == ModItems.UMBRELLA
-                || stuck.getItem() == ModItems.UMBRELLA_BLUE
-                || stuck.getItem() == ModItems.UMBRELLA_MSHRM
-                || stuck.getItem() == ModItems.UMBRELLA_GREEN
-                || stuck.getItem() == ModItems.UMBRELLA_HONEY
-                || stuck.getItem() == ModItems.UMBRELLA_PURPLE
-                || stuck.getItem() == ModItems.UMBRELLA_FLWR
-        );
+        boolean hasUmbrella =
+                isUmbrella(mainHand.getItem()) ||
+                        isUmbrella(offHand.getItem());
 
         return hasUmbrella;
+    }
+
+    // Вспомогательный метод для проверки типа зонтика
+    private static boolean isUmbrella(Item item) {
+        return item == ModItems.UMBRELLA
+                || item == ModItems.UMBRELLA_GREEN
+                || item == ModItems.UMBRELLA_HONEY
+                || item == ModItems.UMBRELLA_PURPLE
+                || item == ModItems.UMBRELLA_FLWR
+                || item == ModItems.UMBRELLA_SPRAY
+                || item == ModItems.UMBRELLA_VAMPIRE;
     }
     private static final Identifier HEALTH_MODIFIER_ID = Identifier.of("b1c2d3e4-f5a6-7890-1234-567890abcdef");
     public static void resethp(ServerPlayerEntity player) {

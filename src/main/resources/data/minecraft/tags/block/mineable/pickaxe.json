@@ -2,6 +2,13 @@
   "replace": false,
   "values": [
     "story:ifirium_ore",
-    "story:ifirium_block"
+    "story:ifirium_block",
+    "story:crusher",
+    "story:cleaner",
+    "story:cut",
+    "story:grate",
+    "story:crystal_block",
+    "story:chiseled",
+    "story:raw_crystal"
   ]
 }

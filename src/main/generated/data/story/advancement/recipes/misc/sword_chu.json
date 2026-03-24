@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sword_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:sword_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:sword_chu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sword_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:sword_chu"
+    ]
+  }
+}

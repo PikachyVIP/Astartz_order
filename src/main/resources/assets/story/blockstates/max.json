@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "story:block/max"
+    },
+    "facing=south": {
+      "model": "story:block/max",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "story:block/max",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "story:block/max",
+      "y": 90
+    }
+  }
+}

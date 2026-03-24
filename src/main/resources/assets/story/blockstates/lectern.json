@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "story:block/lectern"
+    },
+    "facing=south": {
+      "model": "story:block/lectern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "story:block/lectern",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "story:block/lectern",
+      "y": 90
+    }
+  }
+}

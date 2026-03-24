@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": "story:crystal_clear"
+  },
+  "pattern": [
+    "l l",
+    " l ",
+    "l l"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:grate"
+  }
+}

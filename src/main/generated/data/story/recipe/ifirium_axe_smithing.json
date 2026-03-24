@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "story:crystal_ignot_stable",
+  "base": "minecraft:netherite_axe",
+  "result": {
+    "id": "story:ifirium_axe"
+  },
+  "template": "story:axe_chu"
+}

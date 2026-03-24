@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:raw_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:raw_to_crystal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_crystal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:raw_to_crystal"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:obsidian",
+    "g": "minecraft:nether_star",
+    "i": "story:ifirium_block",
+    "l": "minecraft:iron_block",
+    "r": "story:crusher_chu",
+    "s": "minecraft:netherite_pickaxe"
+  },
+  "pattern": [
+    "lsl",
+    "iri",
+    "ege"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:crusher"
+  }
+}

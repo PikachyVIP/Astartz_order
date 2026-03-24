@@ -60,7 +60,7 @@ public class StageHandler {
     }
 
     public static void scheduleStageTransition(ServerPlayerEntity player, int time) {
-        long transitionTime;
+        long transitionTime = -1;
         if (time == -1) {
             player.setAttached(STAGE_TRANSITION_TIME, null);
             if (player.getCommandTags().contains("story_debug")) {
@@ -76,7 +76,6 @@ public class StageHandler {
             case 1 -> transitionTime = System.currentTimeMillis() + THREE_DAYS_MILLIS;
             case 2 -> transitionTime = System.currentTimeMillis() + FIVE_DAYS_MILLIS;
             case 3 -> transitionTime = System.currentTimeMillis() + TWENTY_SECONDS_MILLIS;
-            default -> transitionTime = System.currentTimeMillis() + ONE_DAY_MILLIS;
         }
 
         player.setAttached(STAGE_TRANSITION_TIME, transitionTime);

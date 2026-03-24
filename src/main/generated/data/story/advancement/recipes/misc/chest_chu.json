@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chest_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:chest_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:chest_chu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chest_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:chest_chu"
+    ]
+  }
+}

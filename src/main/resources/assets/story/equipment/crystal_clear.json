@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "story:crystal2"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "story:crystal2"
+      }
+    ]
+  }
+}

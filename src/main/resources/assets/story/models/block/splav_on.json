@@ -1,0 +1,26 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "story:block/smelter_side",
+    "down": "story:block/smelter_bottom",
+    "up": "story:block/smelter_top",
+    "north": "story:block/smelter_front_active",
+    "south": "story:block/smelter_back",
+    "west": "story:block/smelter_back",
+    "east": "story:block/smelter_back"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down": {"texture": "#down"},
+        "up": {"texture": "#up"},
+        "north": {"texture": "#north"},
+        "south": {"texture": "#south"},
+        "west": {"texture": "#west"},
+        "east": {"texture": "#east"}
+      }
+    }
+  ]
+}

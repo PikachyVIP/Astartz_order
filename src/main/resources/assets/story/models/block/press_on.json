@@ -1,0 +1,26 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "story:block/squeezer_side",
+    "down": "story:block/squeezer_buttom",
+    "up": "story:block/squeezer_top",
+    "north": "story:block/squeezer_front_active",
+    "south": "story:block/squeezer_side",
+    "west": "story:block/squeezer_side",
+    "east": "story:block/squeezer_side"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down": {"texture": "#down"},
+        "up": {"texture": "#up"},
+        "north": {"texture": "#north"},
+        "south": {"texture": "#south"},
+        "west": {"texture": "#west"},
+        "east": {"texture": "#east"}
+      }
+    }
+  ]
+}

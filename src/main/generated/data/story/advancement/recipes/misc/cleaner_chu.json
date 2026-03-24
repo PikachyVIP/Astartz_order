@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cleaner_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:cleaner_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:cleaner_chu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cleaner_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:cleaner_chu"
+    ]
+  }
+}

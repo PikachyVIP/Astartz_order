@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_legs_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:legs_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:legs_chu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_legs_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:legs_chu"
+    ]
+  }
+}

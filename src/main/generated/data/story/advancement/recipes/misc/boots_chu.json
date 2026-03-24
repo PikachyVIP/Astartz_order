@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_boots_chu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:boots_chu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:boots_chu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_boots_chu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:boots_chu"
+    ]
+  }
+}
