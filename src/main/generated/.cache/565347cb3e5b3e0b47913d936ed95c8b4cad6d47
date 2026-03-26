@@ -20,8 +20,12 @@ e6e443fd7bb8f7b40d758a9356875316666a2db3 data/story/advancement/recipes/combat/i
 69bcab30f8fc0731d21ccc154ff251d1c99b00d0 data/story/advancement/recipes/misc/crystalblock_to_cut.json
 2488055a8dc25a8b0db1d9573065710c1a61d3b8 data/story/advancement/recipes/misc/crystalclaer_to_crystalblock.json
 0acb756f563f89fd3f6af0b3eabcdf54d4d04d03 data/story/advancement/recipes/misc/cut_to_chiseled.json
+eb1717705c171203d68be01ca031f11c2cd5cd34 data/story/advancement/recipes/misc/deceit.json
+662289662fd5769a90f3573fa816c9e48c4dbb03 data/story/advancement/recipes/misc/devourer.json
 26c3fa62d7d452f640312334899bfe1851402f29 data/story/advancement/recipes/misc/dub_leather.json
+570d9d475c90f0c0c9e986fdad47c3e6f15f22d0 data/story/advancement/recipes/misc/finded.json
 60d5d5c9c779d0ee333c1d3cc3494fe371d66fdb data/story/advancement/recipes/misc/grate.json
+5ec85ef89c1aabcdd0018b22343c893103fdf08e data/story/advancement/recipes/misc/gule.json
 104871f21da9a4e7fa3cfbbab90a206c13d29dbf data/story/advancement/recipes/misc/helmet_chu.json
 91947feeff392c50fd3a5f6e5581342b4f69bc10 data/story/advancement/recipes/misc/him_boots.json
 437d4dcc91bd987507591f8b82a1fb3a79e33181 data/story/advancement/recipes/misc/him_chestplate.json
@@ -31,6 +35,9 @@ bc52030f56896aefa55a4dd2d3bb1b9b37087c99 data/story/advancement/recipes/misc/hoe
 04b81669baa98ef4b4768cab29bb3d25fbddd8ee data/story/advancement/recipes/misc/ifirium.json
 282156a8e996993611358f34cbbfa328394587f1 data/story/advancement/recipes/misc/ifirium_block.json
 549a78dbb99d7d0910240b4646f71e674d953b2f data/story/advancement/recipes/misc/legs_chu.json
+d7ddca4f5fe7ae7e0f04f5485190ed2b914b91d2 data/story/advancement/recipes/misc/liberation.json
+b63da2e44e298b7549b954d60ef15e6e3e5b993f data/story/advancement/recipes/misc/nightlight.json
+46fb2369a617909e58a95e0f60e8bd81076ec592 data/story/advancement/recipes/misc/numbness.json
 57dfbd3b6de519977d48d594242e9c557981a69e data/story/advancement/recipes/misc/pickaxe_chu.json
 f150001d7870b243cc784d1085214ae3f0116bb5 data/story/advancement/recipes/misc/potion_clear.json
 8e98badd06c557616d2d1fb7b84df0923d0ba2eb data/story/advancement/recipes/misc/potion_inf.json
@@ -46,6 +53,9 @@ ac0ebe15be40677ad60317db736b46dce16d5c55 data/story/advancement/recipes/misc/umb
 7a43ee6c94579419e605474e84992222697ebafd data/story/advancement/recipes/misc/umbrella_green.json
 b3a627f5ea369a1428975cd925fcefe5de43e192 data/story/advancement/recipes/misc/umbrella_honey.json
 202c272de935d95857b012d01e7291d4841fff7f data/story/advancement/recipes/misc/umbrella_purple.json
+5744b40c3bd4ebb642f83df64e31abe2858a16af data/story/advancement/recipes/misc/umbrella_spray.json
+cb85f61f0b5b648ba44aca9b24e29133ca0d736b data/story/advancement/recipes/misc/umbrella_vampire.json
+f234d9657439b6f14cec839fb6e1638770142b7b data/story/advancement/recipes/misc/underwatermask.json
 f182e40ff43b8a1920039bf7dcc99e3c3f9cee15 data/story/recipe/axe_chu.json
 aa44f0a97133f6dd5179cdfdeba47b4e18cc2bda data/story/recipe/boots_chu.json
 22f01286038497212c69b6cbad2b4228bdb819b8 data/story/recipe/chest_chu.json
@@ -54,12 +64,16 @@ aa44f0a97133f6dd5179cdfdeba47b4e18cc2bda data/story/recipe/boots_chu.json
 dd4120310e88ef4a8c1f7863fdf1df1cba15f709 data/story/recipe/cleaner_chu.json
 21a59b82a0c4db78e9bfa2a92512a0daafcc6550 data/story/recipe/crusher.json
 cdf63bd07b943189e20a315e8586ab77ede1a614 data/story/recipe/crusher_chu.json
-f48623524ed822087e4f0128fe7d0648f3608d8c data/story/recipe/crystal_clear.json
+00314fc44cf9a40dbc61023d7927a1cfba18019f data/story/recipe/crystal_clear.json
 b3c4d2f578c81103ce1be39fe4564a2e30dda709 data/story/recipe/crystalblock_to_cut.json
 cf7351a6fb867007b2cfc016af6d50687baf09fe data/story/recipe/crystalclaer_to_crystalblock.json
 247fa8510f31debc71b1551049d8ca0b0567a96c data/story/recipe/cut_to_chiseled.json
+e5296c3903b9630c9af3b1fd5c3012c1095d9ad8 data/story/recipe/deceit.json
+8ccc089f4d780f00693f09755806cef427d68e14 data/story/recipe/devourer.json
 d1eb21a52ae5390950b5d0c6aad51d9599a3a4cd data/story/recipe/dub_leather.json
+1bc3a64b89f4e33e3ba45e30102ea9790824a05a data/story/recipe/finded.json
 fa73c5b732bd8ea519256b7888540d8074d9a7b7 data/story/recipe/grate.json
+5b6f0791fcb549150d23fd03bd1ab58013ef976f data/story/recipe/gule.json
 03bb5bc4f8cf2754b6206a92df22f3f341856ba1 data/story/recipe/helmet_chu.json
 3a309ac329e387d440caf3469fe78bfeb6096644 data/story/recipe/him_boots.json
 dc9d356ef40c9e4a2688a54ff024402f2ebe8081 data/story/recipe/him_chestplate.json
@@ -78,6 +92,9 @@ f73e37eb67c36abd7a6c09ca93c418edf163680d data/story/recipe/ifirium_picaxe_smithi
 3a6541325664d796c40b4a2489a300052d94b606 data/story/recipe/ifirium_shovel_smithing.json
 f9e0455b7fe99b931165e3bbb787cf0a058b1942 data/story/recipe/ifirium_sword_smithing.json
 8e1dd0085dfda03fca377fb81dec3c1ca7021bb3 data/story/recipe/legs_chu.json
+ea1e45074d655e14e7ff03ba8d2c9bd488ff1efb data/story/recipe/liberation.json
+55c335b0ef8572f664c977b737190baac3c1d466 data/story/recipe/nightlight.json
+243306bee3545ef9b7cc484f81d306e81b2b5057 data/story/recipe/numbness.json
 33c3097813c4d86bebcc6ad319cdcb78241a5527 data/story/recipe/pickaxe_chu.json
 fd750222eac2f236b1bab6ed6f1b32ef8c2a75af data/story/recipe/potion_clear.json
 826a81c5ffbb87266d6380bb25b65c139bc3dd7e data/story/recipe/potion_inf.json
@@ -93,3 +110,6 @@ e732cc9e218b98d50dd63700d956126bd8f70306 data/story/recipe/umbrella.json
 1c53e260494813cde470469217e442e3784a0201 data/story/recipe/umbrella_green.json
 2c6c10eef6f7df1910a35783ff4df37c60cf92e3 data/story/recipe/umbrella_honey.json
 e5812670d8b07664d35f10d6015b0f6e717898dd data/story/recipe/umbrella_purple.json
+2dcc2ab130bbb4c3420fbf37376ec0b8a768d43f data/story/recipe/umbrella_spray.json
+5d98245fc7797fe06ba43884856cbb333431ee74 data/story/recipe/umbrella_vampire.json
+db0a1b10d7a3ddefddda24f81abeb5abf35c0790 data/story/recipe/underwatermask.json

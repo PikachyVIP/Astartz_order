@@ -55,6 +55,7 @@ public class MutationStage3BuffHandler {
        // ScavengerBuff.register();
         AntigravBuff.register();
         LostBuff.register();
+        HungryCurseBuff.register();
     }
 
     private static void onServerTick(MinecraftServer server) {

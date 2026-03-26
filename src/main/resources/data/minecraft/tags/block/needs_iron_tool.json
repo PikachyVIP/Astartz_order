@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "story:crusher",
-    "story:cleaner"
+    "story:cleaner",
+    "story:press",
+    "story:splav"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": "minecraft:diamond",
+    "e": "minecraft:phantom_membrane",
+    "i": "story:ifirium",
+    "o": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "oio",
+    "d d",
+    "eee"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:liberation"
+  }
+}

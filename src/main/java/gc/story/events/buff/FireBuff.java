@@ -36,6 +36,15 @@ public class FireBuff {
                 boolean isDay = player.getEntityWorld().isDay();
                 boolean isInOverworld = player.getEntityWorld().getRegistryKey() == World.OVERWORLD;
 
+                player.addStatusEffect(new StatusEffectInstance(
+                        StatusEffects.FIRE_RESISTANCE,
+                        EFFECT_DURATION,
+                        0,
+                        false,
+                        false,
+                        false
+                ));
+
                 if (isInNether) {
                     player.addStatusEffect(new StatusEffectInstance(
                             StatusEffects.SPEED,

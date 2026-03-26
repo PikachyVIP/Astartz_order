@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": "minecraft:glass",
+    "i": "story:ifirium",
+    "l": "minecraft:glowstone",
+    "o": "minecraft:obsidian",
+    "r": "minecraft:redstone_lamp"
+  },
+  "pattern": [
+    "lil",
+    "grg",
+    "ooo"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:nightlight"
+  }
+}

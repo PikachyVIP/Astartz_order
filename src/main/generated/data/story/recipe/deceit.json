@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:ender_eye",
+    "g": "minecraft:gold_ingot",
+    "i": "story:ifirium",
+    "p": "minecraft:ender_pearl"
+  },
+  "pattern": [
+    "epe",
+    "i i",
+    "gig"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:deceit"
+  }
+}

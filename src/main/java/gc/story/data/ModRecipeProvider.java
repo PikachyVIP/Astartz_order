@@ -277,7 +277,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.HOE_CHU), conditionsFromItem(ModItems.HOE_CHU))
                         .offerTo(exporter);
 
-                createShaped(RecipeCategory.MISC, ModItems.CRYSTAL_CLEAR, 9)
+                createShaped(RecipeCategory.MISC, ModItems.CRYSTAL_CLEAR, 4)
                         .pattern("l  ")
                         .pattern("   ")
                         .pattern("   ")
@@ -429,6 +429,124 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.NETHERITE_HELMET), conditionsFromItem(Items.NETHERITE_HELMET))
                         .offerTo(exporter, getItemPath(ModItems.IFIRIUM_HELMET) + "_smithing");
 
+
+
+
+
+
+                createShaped(RecipeCategory.MISC, ModItems.UMBRELLA_SPRAY, 1)
+                        .pattern("sis")
+                        .pattern("iri")
+                        .pattern("igi")
+                        .input('g', Items.HEART_OF_THE_SEA)
+                        .input('s', Items.NETHERITE_INGOT)
+                        .input('r', Ingredient.ofItems(
+                                ModItems.UMBRELLA,
+                                ModItems.UMBRELLA_GREEN,
+                                ModItems.UMBRELLA_FLWR,
+                                ModItems.UMBRELLA_PURPLE,
+                                ModItems.UMBRELLA_HONEY
+                                ))
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.UMBRELLA_VAMPIRE, 1)
+                        .pattern("sis")
+                        .pattern("iri")
+                        .pattern("igi")
+                        .input('g', Items.NETHER_STAR)
+                        .input('s', Items.NETHERITE_INGOT)
+                        .input('r', Ingredient.ofItems(
+                                ModItems.UMBRELLA,
+                                ModItems.UMBRELLA_GREEN,
+                                ModItems.UMBRELLA_FLWR,
+                                ModItems.UMBRELLA_PURPLE,
+                                ModItems.UMBRELLA_HONEY
+                        ))
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.GULE, 1)
+                        .pattern("ddd")
+                        .pattern("rir")
+                        .pattern("sss")
+                        .input('s', Items.CRYING_OBSIDIAN)
+                        .input('r', Items.ENDER_EYE)
+                        .input('d', ModItems.DUB_LEATHER)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.DUB_LEATHER), conditionsFromItem(ModItems.DUB_LEATHER))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.NIGHTLIGHT, 1)
+                        .pattern("lil")
+                        .pattern("grg")
+                        .pattern("ooo")
+                        .input('o', Items.OBSIDIAN)
+                        .input('g', Items.GLASS)
+                        .input('l', Items.GLOWSTONE)
+                        .input('r', Items.REDSTONE_LAMP)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.IFIRIUM), conditionsFromItem(ModItems.IFIRIUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.DEVOURER, 1)
+                        .pattern("ggg")
+                        .pattern("lil")
+                        .pattern("oro")
+                        .input('o', Items.CRYING_OBSIDIAN)
+                        .input('g', Items.TINTED_GLASS)
+                        .input('l', Items.PRISMARINE_SHARD)
+                        .input('r', Items.SOUL_CAMPFIRE)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.IFIRIUM), conditionsFromItem(ModItems.IFIRIUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.DECEIT, 1)
+                        .pattern("epe")
+                        .pattern("i i")
+                        .pattern("gig")
+                        .input('p', Items.ENDER_PEARL)
+                        .input('e', Items.ENDER_EYE)
+                        .input('g', Items.GOLD_INGOT)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.IFIRIUM), conditionsFromItem(ModItems.IFIRIUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.FINDED, 1)
+                        .pattern("epe")
+                        .pattern("i i")
+                        .pattern("gig")
+                        .input('p', Items.DIAMOND)
+                        .input('e', Items.COMPASS)
+                        .input('g', Items.GOLD_INGOT)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.IFIRIUM), conditionsFromItem(ModItems.IFIRIUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.UNDERWATERMASK, 1)
+                        .pattern("ooo")
+                        .pattern("eie")
+                        .pattern("ppp")
+                        .input('o', Items.OBSIDIAN)
+                        .input('e', Items.ENDER_EYE)
+                        .input('p', Items.PRISMARINE_SHARD)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.IFIRIUM), conditionsFromItem(ModItems.IFIRIUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.NUMBNESS, 1)
+                        .pattern("oio")
+                        .pattern("e e")
+                        .pattern("eee")
+                        .input('o', Items.OBSIDIAN)
+                        .input('e', Items.IRON_BLOCK)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.IFIRIUM), conditionsFromItem(ModItems.IFIRIUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.MISC, ModItems.LIBERT, 1)
+                        .pattern("oio")
+                        .pattern("d d")
+                        .pattern("eee")
+                        .input('o', Items.IRON_INGOT)
+                        .input('d', Items.DIAMOND)
+                        .input('e', Items.PHANTOM_MEMBRANE)
+                        .input('i', ModItems.IFIRIUM)
+                        .criterion(hasItem(ModItems.IFIRIUM), conditionsFromItem(ModItems.IFIRIUM))
+                        .offerTo(exporter);
             }
         };
     }

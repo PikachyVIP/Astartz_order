@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": "minecraft:nether_star",
+    "i": "story:ifirium",
+    "r": [
+      "story:umbrella",
+      "story:umbrella_green",
+      "story:umbrella_flwr",
+      "story:umbrella_purple",
+      "story:umbrella_honey"
+    ],
+    "s": "minecraft:netherite_ingot"
+  },
+  "pattern": [
+    "sis",
+    "iri",
+    "igi"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:umbrella_vampire"
+  }
+}

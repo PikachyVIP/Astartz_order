@@ -12,38 +12,23 @@ public class HungryCurseBuff {
         ServerTickEvents.END_SERVER_TICK.register(HungryCurseBuff::onServerTick);
     }
 
-
     private static void onServerTick(MinecraftServer server) {
         for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
             if (MutationStage3BuffHandler.hasBuff(player, MutationStage3BuffHandler.Buff.HUNGER_CURSE)) {
-                applySpeed(player);
+
+                if (server.getTicks() % 20 == 0) {
+                    player.addStatusEffect(new StatusEffectInstance(
+                            StatusEffects.SPEED, 40, 1, false, false, true
+                    ));
+                    player.addStatusEffect(new StatusEffectInstance(
+                            StatusEffects.HASTE, 40, 2, false, false, true
+                    ));
+                    player.addStatusEffect(new StatusEffectInstance(
+                            StatusEffects.NIGHT_VISION, 400, 0, false, false, true
+                    ));
+                }
             }
         }
     }
-    public static void applySpeed(ServerPlayerEntity player){
-        player.addStatusEffect(new StatusEffectInstance(
-                StatusEffects.SPEED,
-                90,
-                0,
-                false,
-                false,
-                true
-        ));
-        player.addStatusEffect(new StatusEffectInstance(
-                StatusEffects.HASTE,
-                90,
-                1,
-                false,
-                false,
-                true
-        ));
-        player.addStatusEffect(new StatusEffectInstance(
-                StatusEffects.NIGHT_VISION,
-                200,
-                0,
-                false,
-                false,
-                true
-        ));
-    }
+
 }

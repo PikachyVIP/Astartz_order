@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:iron_block",
+    "i": "story:ifirium",
+    "o": "minecraft:obsidian"
+  },
+  "pattern": [
+    "oio",
+    "e e",
+    "eee"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:numbness"
+  }
+}

@@ -5,14 +5,17 @@ import gc.story.events.InfectionHandler;
 import gc.story.events.MutationStage3BuffHandler;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.minecraft.component.DataComponentTypes;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
@@ -38,6 +41,7 @@ public class ScavengerBuff {
         SCAVENGER_FOOD.add(Items.SUSPICIOUS_STEW);
         SCAVENGER_FOOD.add(Items.PUFFERFISH);
     }
+
 
 
     public static ActionResult onItemUse(PlayerEntity player, net.minecraft.world.World world, net.minecraft.util.Hand hand) {

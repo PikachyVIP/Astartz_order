@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:compass",
+    "g": "minecraft:gold_ingot",
+    "i": "story:ifirium",
+    "p": "minecraft:diamond"
+  },
+  "pattern": [
+    "epe",
+    "i i",
+    "gig"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:finded"
+  }
+}

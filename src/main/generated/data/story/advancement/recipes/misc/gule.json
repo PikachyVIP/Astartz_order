@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dub_leather": {
+      "conditions": {
+        "items": [
+          {
+            "items": "story:dub_leather"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "story:gule"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dub_leather"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "story:gule"
+    ]
+  }
+}

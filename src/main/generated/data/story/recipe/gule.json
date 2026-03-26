@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": "story:dub_leather",
+    "i": "story:ifirium",
+    "r": "minecraft:ender_eye",
+    "s": "minecraft:crying_obsidian"
+  },
+  "pattern": [
+    "ddd",
+    "rir",
+    "sss"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:gule"
+  }
+}

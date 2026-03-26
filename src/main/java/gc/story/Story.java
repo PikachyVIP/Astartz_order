@@ -5,6 +5,7 @@ import gc.story.commands.CompAdminCommands;
 import gc.story.commands.StoryAdminCommand;
 import gc.story.data.BiomeModificationInit;
 import gc.story.events.*;
+import gc.story.events.buff.ScavengerBuff;
 import gc.story.events.debuff.*;
 import gc.story.inits.*;
 import gc.story.networking.StoryNetwork;
@@ -72,6 +73,5 @@ public class Story implements ModInitializer {
 				InfectionHandler.INFECTED_ATTACHMENT + ", " +
 				InfectionHandler.CHANCE_ATTACHMENT);
 		LOGGER.info("Hello Fabric world!");
-
 	}
 }

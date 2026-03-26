@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:ender_eye",
+    "i": "story:ifirium",
+    "o": "minecraft:obsidian",
+    "p": "minecraft:prismarine_shard"
+  },
+  "pattern": [
+    "ooo",
+    "eie",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:underwatermask"
+  }
+}

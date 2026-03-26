@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": "minecraft:tinted_glass",
+    "i": "story:ifirium",
+    "l": "minecraft:prismarine_shard",
+    "o": "minecraft:crying_obsidian",
+    "r": "minecraft:soul_campfire"
+  },
+  "pattern": [
+    "ggg",
+    "lil",
+    "oro"
+  ],
+  "result": {
+    "count": 1,
+    "id": "story:devourer"
+  }
+}
